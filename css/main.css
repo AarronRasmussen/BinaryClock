@@ -86,11 +86,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
 .grid-container {
   display: inline-grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns: repeat(6, 2fr);
+  grid-template-rows: repeat(4, 2fr);
   background-color: black;
   border-radius: 10%;
   gap: 10px;
@@ -100,9 +102,7 @@ textarea {
   grid-column: 1;
 }
 
-.gridOnesHoursColumn {
-  background-color: yellow;
-  border-right: 2px black;
+.gridOnesHoursColumn{
   grid-column: 2;
 }
 
@@ -128,10 +128,6 @@ textarea {
   border-radius: 50%;
   border: 2px solid whitesmoke;
 }
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
 
 /*
  * Hide visually and from screen readers
