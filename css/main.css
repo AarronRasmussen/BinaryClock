@@ -17,6 +17,10 @@ html {
   line-height: 1.4;
 }
 
+body {
+  background-color: whitesmoke;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -89,44 +93,24 @@ textarea {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-.grid-container {
-  display: inline-grid;
-  grid-template-columns: repeat(6, 2fr);
-  grid-template-rows: repeat(4, 2fr);
-  background-color: black;
-  border-radius: 10%;
-  gap: 10px;
+.center {
+  margin: auto;
+  width: 50%;
 }
 
-.gridTensHoursColumn {
-  grid-column: 1;
-}
+.clockFormat {
 
-.gridOnesHoursColumn{
-  grid-column: 2;
-}
-
-.gridTensMinutesColumn {
-  grid-column: 3;
-}
-
-.gridOnesMinutesColumn {
-  grid-column: 4;
-}
-
-.gridTensSecondsColumn {
-  grid-column: 5;
-}
-
-.gridOnesSecondsColumn {
-  grid-column: 6;
 }
 
 .circle {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  border: 2px solid whitesmoke;
+  border: 2px solid black;
+  left: 20px;
+  top: 20px;
+  position: relative;
+  display: inline-block;
 }
 
 /*
